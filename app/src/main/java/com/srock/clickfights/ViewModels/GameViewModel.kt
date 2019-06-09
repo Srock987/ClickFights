@@ -26,8 +26,6 @@ class GameViewModel : ViewModel() {
     fun spawn(){
         locator?.let {
             Handler().postDelayed({
-                println("Spawn handler")
-
                 game.dots.add(Dot(it.findNewSpot(game.dots.map { it.position }.toList()),
                     System.currentTimeMillis(),0))
                 spawn()
