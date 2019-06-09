@@ -1,9 +1,9 @@
-package com.srock.clickfights.Activities
+package com.srock.clickfights.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.srock.clickfights.R
-import com.srock.clickfights.ViewModels.GameViewModel
+import com.srock.clickfights.viewModels.GameViewModel
 import kotlinx.android.synthetic.main.activity_game.*
 
 class GameActivity : AppCompatActivity() {

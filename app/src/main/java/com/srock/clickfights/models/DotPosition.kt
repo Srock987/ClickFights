@@ -1,6 +1,7 @@
-package com.srock.clickfights.Models
+package com.srock.clickfights.models
 
 import kotlin.math.absoluteValue
+import kotlin.math.pow
 
 class DotPosition(val x: Float,val y: Float){
     fun isCollidingWith(collidingDot: DotPosition) : Boolean{
@@ -10,4 +11,9 @@ class DotPosition(val x: Float,val y: Float){
         }
         return false
     }
+
+    fun distanceToPosition(checkedPosition: DotPosition) : Float{
+        return kotlin.math.sqrt((checkedPosition.x-x).absoluteValue.pow(2f) + (checkedPosition.y-y).absoluteValue.pow(2f))
+    }
+
 }

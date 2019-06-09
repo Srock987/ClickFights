@@ -1,4 +1,4 @@
-package com.srock.clickfights.Models
+package com.srock.clickfights.models
 
 import kotlin.math.pow
 

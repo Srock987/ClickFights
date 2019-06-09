@@ -23,7 +23,7 @@
             app:layout_constraintGuide_percent="0.15"
     />
 
-    <com.srock.clickfights.Activities.GameView
+    <com.srock.clickfights.activities.GameView
             android:id="@+id/game_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -31,7 +31,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/stats_guideline"
             app:layout_constraintBottom_toBottomOf="parent">
-    </com.srock.clickfights.Activities.GameView>
+    </com.srock.clickfights.activities.GameView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

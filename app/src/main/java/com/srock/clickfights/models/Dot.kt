@@ -1,8 +1,6 @@
-package com.srock.clickfights.Models
+package com.srock.clickfights.models
 
-import android.R.attr.x
-import com.srock.clickfights.Models.DotStats.Companion.mapSpanToRadius
-import kotlin.math.pow
+import com.srock.clickfights.models.DotStats.Companion.mapSpanToRadius
 
 
 class Dot(val position: DotPosition,val birthDate: Long, val difficultyLevel: Int){
@@ -21,6 +19,10 @@ class Dot(val position: DotPosition,val birthDate: Long, val difficultyLevel: In
         val lifetime = deathDate-birthDate
         val timeElapsed = currentTime - birthDate
         return (lifetime-timeElapsed)/lifetime.toFloat()
+    }
+
+    fun isPositionInRadius(checkedPosition: DotPosition) : Boolean{
+        return radius(System.currentTimeMillis()) >= checkedPosition.distanceToPosition(position)
     }
 
 

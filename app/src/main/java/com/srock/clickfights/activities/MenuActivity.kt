@@ -1,4 +1,4 @@
-package com.srock.clickfights.Activities
+package com.srock.clickfights.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

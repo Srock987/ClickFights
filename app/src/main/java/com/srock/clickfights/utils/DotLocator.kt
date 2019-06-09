@@ -1,8 +1,7 @@
-package com.srock.clickfights.Utils
+package com.srock.clickfights.utils
 
-import com.srock.clickfights.Models.Dot
-import com.srock.clickfights.Models.DotPosition
-import com.srock.clickfights.Models.DotStats
+import com.srock.clickfights.models.DotPosition
+import com.srock.clickfights.models.DotStats
 import kotlin.random.Random
 
 class DotLocator(private val height: Int, private val width: Int) {

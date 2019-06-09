@@ -8,8 +8,8 @@ import androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
-import com.srock.clickfights.Activities.GameActivity
-import com.srock.clickfights.Activities.MenuActivity
+import com.srock.clickfights.activities.GameActivity
+import com.srock.clickfights.activities.MenuActivity
 import org.junit.Rule
 import org.junit.Test
 

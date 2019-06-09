@@ -1,8 +1,8 @@
 package com.srock.clickfights
 
-import com.srock.clickfights.Models.Dot
-import com.srock.clickfights.Models.DotPosition
-import com.srock.clickfights.Models.DotStats
+import com.srock.clickfights.models.Dot
+import com.srock.clickfights.models.DotPosition
+import com.srock.clickfights.models.DotStats
 import org.junit.Test
 
 class DotTests {

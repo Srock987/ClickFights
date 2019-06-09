@@ -1,11 +1,11 @@
-package com.srock.clickfights.ViewModels
+package com.srock.clickfights.viewModels
 
 import android.os.Handler
 import androidx.lifecycle.ViewModel
-import com.srock.clickfights.Models.Dot
-import com.srock.clickfights.Models.DotPosition
-import com.srock.clickfights.Models.Game
-import com.srock.clickfights.Utils.DotLocator
+import com.srock.clickfights.models.Dot
+import com.srock.clickfights.models.DotPosition
+import com.srock.clickfights.models.Game
+import com.srock.clickfights.utils.DotLocator
 
 class GameViewModel : ViewModel() {
     val game = Game()
@@ -31,6 +31,19 @@ class GameViewModel : ViewModel() {
                 spawn()
             },2000)
             spawning = true
+        }
+    }
+
+    fun dotNaturalDeath(dyingDot: Dot){
+        game.dots.remove(dyingDot)
+    }
+
+    fun killTry(killPosition: DotPosition){
+        val clickedDots = game.dots.filter { dot -> dot.isPositionInRadius(killPosition) }
+        if (clickedDots.isNotEmpty()) {
+            for (clicked in clickedDots) {
+                game.dots.remove(clicked)
+            }
         }
     }
 }
